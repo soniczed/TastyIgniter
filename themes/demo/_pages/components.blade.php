@@ -1,5 +1,5 @@
 ---
-title: main::lang.contact.title
+title: igniter::main.contact.title
 layout: default
 permalink: /components
 
