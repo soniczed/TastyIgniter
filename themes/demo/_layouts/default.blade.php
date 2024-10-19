@@ -5,6 +5,7 @@ description: Default layout
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ App::getLocale() }}">
 <head>
     @partial('head')
+    <link rel="stylesheet" href="{{ asset('themes/demo/assets/font-awesome/css/all.min.css') }}">
 </head>
 <body class="d-flex flex-column h-100 {{ $this->page->bodyClass }}">
     <header id="main-header">
@@ -12,7 +13,9 @@ description: Default layout
             <div class="row">
                 <div class="col-sm-12">
                     <div class="logo">
-                        <a class="" href="{{ page_url('home') }}">@lang($this->page->title)</a>
+                        <a class="" href="{{ page_url('home') }}">
+                            <i class="fas fa-utensils"></i> @lang($this->page->title)
+                        </a>
                     </div>
                 </div>
             </div>
